@@ -28,7 +28,7 @@ var socket = io.connect();
 
 
 $(document).ready(function() {
-    alert();
+
     var chatApp = new Chat(socket);
     socket.on('nameResult', function(result) {
         var message;
